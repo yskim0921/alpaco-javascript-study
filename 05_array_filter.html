@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head><meta charset="UTF-8"><title>배열 정렬 필터</title></head>
+<body>
+<script>
+let students = [
+  { name: "민준", score: 85 },
+  { name: "서연", score: 92 },
+  { name: "지후", score: 78 }
+];
+students.sort((a, b) => b.score - a.score);
+let passed = students.filter(s => s.score >= 80);
+passed.forEach(s => document.write(`${s.name}: ${s.score}<br>`));
+</script>
+</body>
+</html>

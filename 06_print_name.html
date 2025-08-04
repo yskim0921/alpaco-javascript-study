@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head><meta charset="UTF-8"><title>이름 출력</title></head>
+<body>
+<input type="text" id="username" placeholder="이름 입력">
+<button onclick="printName()">출력</button>
+<p id="output"></p>
+<script>
+function printName() {
+  let name = document.getElementById("username").value;
+  document.getElementById("output").innerText = `안녕하세요, ${name}님!`;
+}
+</script>
+</body>
+</html>

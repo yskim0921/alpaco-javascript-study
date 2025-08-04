@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head><meta charset="UTF-8"><title>사용자 카드</title>
+<style>
+#card {
+  border:1px solid #ccc; padding:10px; width:300px;
+  border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+</style>
+</head>
+<body>
+<div id="card"></div>
+<script>
+let user = {
+  name: "김범준",
+  age: 35,
+  job: "범준샘 AI 아카데미 대표",
+  skills: ["HTML", "CSS", "JavaScript"]
+};
+let html = `
+  <div>
+    <h2>${user.name}</h2>
+    <p>나이: ${user.age}</p>
+    <p>직업: ${user.job}</p>
+    <p>기술: ${user.skills.join(", ")}</p>
+  </div>
+`;
+document.getElementById("card").innerHTML = html;
+</script>
+</body>
+</html>

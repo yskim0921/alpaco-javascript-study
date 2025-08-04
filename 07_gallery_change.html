@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head><meta charset="UTF-8"><title>이미지 변경</title></head>
+<body>
+<img id="gallery" src="img1.jpg" height="300"><br>
+<button onclick="changeImage('img1.jpg')">1번 이미지</button>
+<button onclick="changeImage('img2.jpg')">2번 이미지</button>
+<button onclick="changeImage('img3.jpg')">3번 이미지</button>
+<script>
+function changeImage(filename) {
+  document.getElementById("gallery").src = filename;
+}
+</script>
+</body>
+</html>

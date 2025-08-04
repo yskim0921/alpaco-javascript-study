@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head><meta charset="UTF-8"><title>ToDo List</title></head>
+<body>
+<div id="todoBox"></div>
+<script>
+let todoList = [
+  { id: 1, title: "청소하기", done: false },
+  { id: 2, title: "공부하기", done: true },
+  { id: 3, title: "운동하기", done: false }
+];
+let html = "<ul>";
+todoList.forEach(todo => {
+    html += `<li>${todo.title} - ${todo.done ? "✅" : "❌"}</li>`;
+});
+html += "</ul>";
+document.getElementById("todoBox").innerHTML = html;
+</script>
+</body>
+</html>

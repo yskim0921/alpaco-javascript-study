@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head><meta charset="UTF-8"><title>문자열 대문자 변환</title></head>
+<body>
+<input type="text" id="nameInput" placeholder="이름 입력">
+<button onclick="convertName()">대문자로 변환</button>
+<p id="result1"></p>
+<script>
+function convertName() {
+  let name = document.getElementById("nameInput").value;
+  let upper = name.trim().toUpperCase();
+  document.getElementById("result1").innerText = "변환 결과: " + upper;
+}
+</script>
+</body>
+</html>

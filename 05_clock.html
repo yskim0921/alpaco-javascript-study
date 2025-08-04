@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head><meta charset="UTF-8"><title>시계</title></head>
+<body>
+<p id="clock"></p>
+<script>
+function updateClock() {
+  let now = new Date();
+  let hour = now.getHours().toString().padStart(2, '0');
+  let min = now.getMinutes().toString().padStart(2, '0');
+  let sec = now.getSeconds().toString().padStart(2, '0');
+  document.getElementById("clock").innerText = `${hour}:${min}:${sec}`;
+}
+setInterval(updateClock, 1000);
+</script>
+</body>
+</html>
